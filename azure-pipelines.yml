@@ -40,3 +40,4 @@ steps:
     otherConsoleOptions: '/Logger:ReportPortal'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+    rerunFailedTests: true
