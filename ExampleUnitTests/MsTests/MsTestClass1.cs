@@ -45,6 +45,12 @@ namespace ExampleUnitTests.MsTests
         [TestMethod]
         public async Task FailedMethod4()
         {
+            var variables = Environment.GetEnvironmentVariables();
+            foreach(var key in variables.Keys)
+            {
+                Log.Info($"{key}: {variables[key]}");
+            }
+
             for (int i = 0; i < 5; i++)
             {
                 await Task.Delay(1000);
