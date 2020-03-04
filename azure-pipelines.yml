@@ -25,6 +25,7 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
+    vsVersion: '15.0'
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
@@ -44,7 +45,9 @@ steps:
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
     vsTestVersion: 'toolsInstaller'
-    otherConsoleOptions: '/Logger:ReportPortal'
+    runSettingsFile: 'ReportPortal.runsettings'
+    batchingBasedOnAgentsOption: 'customBatchSize'
+    customBatchSizeValue: '5'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     rerunFailedTests: true
