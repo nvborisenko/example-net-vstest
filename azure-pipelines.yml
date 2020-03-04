@@ -46,6 +46,8 @@ steps:
     searchFolder: '$(System.DefaultWorkingDirectory)'
     vsTestVersion: 'toolsInstaller'
     otherConsoleOptions: '/Logger:ReportPortal'
+    batchingBasedOnAgentsOption: 'customBatchSize'
+    customBatchSizeValue: '5'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
     rerunFailedTests: true
