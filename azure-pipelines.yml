@@ -45,7 +45,7 @@ steps:
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
     vsTestVersion: 'toolsInstaller'
-    otherConsoleOptions: '/Logger:ReportPortal'
+    runSettingsFile: 'ReportPortal.runsettings'
     batchingBasedOnAgentsOption: 'customBatchSize'
     customBatchSizeValue: '5'
     platform: '$(buildPlatform)'
