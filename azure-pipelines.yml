@@ -36,6 +36,7 @@ steps:
       !**\*TestAdapter.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
+    vsTestVersion: '15.0'
     otherConsoleOptions: '/Logger:ReportPortal'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
