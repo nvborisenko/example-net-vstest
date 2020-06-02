@@ -3,7 +3,10 @@
   "enabled": true,
 	"server": {
 		"url": "https://web.demo.reportportal.io/api/v1/",
-		"project": "default_personal"
+		"project": "default_personal",
+		"authentication": {
+      		"uuid": "a0ec06ca-4743-4e54-b31d-308780d620e9"
+    	}
 	},
   "launch": {
     "name": "VS Test Demo Launch",
