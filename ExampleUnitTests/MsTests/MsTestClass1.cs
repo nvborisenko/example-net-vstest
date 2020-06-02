@@ -58,7 +58,7 @@ namespace ExampleUnitTests.MsTests
                 Log.Debug("Logger output");
             }
 
-            Assert.IsTrue(false);
+            //Assert.IsTrue(false);
         }
 
         [DataTestMethod]
