@@ -5,7 +5,7 @@
   </RunConfiguration>
   <LoggerRunSettings>
     <Loggers>
-      <Logger friendlyName="ReportPortal">
+      <Logger friendlyName="ReportPortal3">
         <Configuration>
           <Launch.Description>Ran from Visual Studio Test Explorer</Launch.Description>
         </Configuration>
