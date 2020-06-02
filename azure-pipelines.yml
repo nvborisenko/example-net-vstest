@@ -33,7 +33,7 @@ steps:
 - task: VisualStudioTestPlatformInstaller@1
   inputs:
     packageFeedSelector: 'nugetOrg'
-    versionSelector: 'latestStable'
+    versionSelector: 'latestPreRelease'
 
 - task: VSTest@2
   inputs:
